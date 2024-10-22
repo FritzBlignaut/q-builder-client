@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CardComponent } from '../shared/components/card/card.component';
+import { QuestionService } from './question.service';
 
 @Component({
   selector: 'app-questions',
@@ -9,5 +10,5 @@ import { CardComponent } from '../shared/components/card/card.component';
   styleUrl: './questions.component.scss'
 })
 export class QuestionsComponent {
-
+  constructor(private questionService: QuestionService) {}
 }
