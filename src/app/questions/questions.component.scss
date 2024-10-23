@@ -1,0 +1,13 @@
+section {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.questions-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 90vh;
+}

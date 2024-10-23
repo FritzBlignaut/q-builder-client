@@ -1,5 +1,11 @@
 <div class="card">
     <div class="card-body">
-      {{ data | json }}
+      <form [ngSwitch]="data.controlType">
+        <div *ngSwitchCase="'text'" class="mb-3">
+          <label [for]="'question_' + data.id" class="form-label">{{data.questionText}}</label>
+          <input type="text" class="form-control" [id]="'question_' + data.id" aria-describedby="questionHelp">
+          <div id="questionHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+      </form>
     </div>
 </div>
