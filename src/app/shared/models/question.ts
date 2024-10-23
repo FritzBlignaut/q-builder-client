@@ -15,8 +15,8 @@ export enum ControlType {
 
 interface Validation {
     required: boolean;
-    minLength: number;
-    maxLength: number;
+    minLength?: number;
+    maxLength?: number;
 }
 
 // Example of a Question object

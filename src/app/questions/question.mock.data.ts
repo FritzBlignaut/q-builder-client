@@ -14,13 +14,22 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: '2',
-        questionText: 'What is your age?',
-        subText: 'Please enter your age',
+        questionText: 'What is your surname?',
+        subText: 'Please enter your surname',
         controlType: ControlType.Textbox,
         validation: {
             required: true,
-            minLength: 1,
-            maxLength: 3
+            minLength: 3,
+            maxLength: 100
+        }
+    },
+    {
+        id: '3',
+        questionText: 'What is your age?',
+        subText: 'Please enter your age',
+        controlType: ControlType.Checkbox,
+        validation: {
+            required: true
         }
     }
 ];
