@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <button (click)="scrollToPreviousQuestion(i)" [disabled]="i === 0" class="btn btn-primary">Back</button>
+                    <button (click)="scrollToPreviousQuestion(i)" [disabled]="i === 0" class="btn btn-primary btn-back-next">Back</button>
                 </div>
             </div>
             <br>
@@ -15,7 +15,7 @@
             <br>
             <div class="row">
                 <div class="col">
-                    <button (click)="scrollToNextQuestion(i)" class="btn btn-primary">{{ last ? 'Submit' : 'Continue' }}</button>
+                    <button (click)="scrollToNextQuestion(i)" class="btn btn-primary btn-back-next">{{ last ? 'Submit' : 'Continue' }}</button>
                 </div>
             </div>
         </div>
